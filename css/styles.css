@@ -1,0 +1,13 @@
+body {
+  background-color: #e5e5e5;
+}
+.page-header {
+  width: 1600;
+  height: 80;
+  background-color: white;
+}
+.logo {
+  width: 145;
+  height: 31;
+  font-size: 26;
+}
