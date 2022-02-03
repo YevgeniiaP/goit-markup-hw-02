@@ -15,41 +15,41 @@
 <body>
    <!-- Шапка сайта -->
    <header class="page-header">
-   <nav>
-   <a href="WebStudio" class="logo">WebStudio</a>
-   <ul class="site-nav">
-        <li><a href="./index.html" class="site-nav-items">Студия</a></li>
-        <li><a href="./portfolio.html" class="site-nav-items">Портфолио</a></li>
-        <li><a href="" class="site-nav-items">Контакты</a></li>
-   </ul>
-   </nav> 
-   <ul class="auth-nav">    
-   <li><a href="mailto:info@devstudio.com" class="auth-nav-items">info@devstudio.com</a></li>
-   <li><a href="tel:+380961111111" class="auth-nav-items">+380961111111</a></li>
-   </ul>
-</header>
+      <nav>
+         <a href="WebStudio" class="logo"><span>Web</span>Studio</a>
+         <ul class="site-nav">
+            <li class="site-nav-list-item"><a href="./index.html" class="site-nav-items">Студия</a></li>
+            <li class="site-nav-list-item"><a href="./portfolio.html" class="site-nav-items">Портфолио</a></li>
+            <li class="site-nav-list-item"><a href="" class="site-nav-items">Контакты</a></li>
+         </ul>
+      </nav>
+      <ul class="contacts">
+         <li><a href="mailto:info@devstudio.com" class="contacts-items">info@devstudio.com</a></li>
+         <li><a href="tel:+380961111111" class="contacts-items">+380961111111</a></li>
+      </ul>
+   </header>
 <!-- Основной контент -->
 <main>
-<section>
+<section class="title-section">
    <h1 class="title">Эффективные решения<br>для вашего бизнеса</h1>
    <button type="button" class="btn">Заказать услугу</button>
   </section>
 <section> 
    <h2 class="hidden-title">Преимущества нашей компании</h2> 
    <ul>
-      <li>
+      <li class="list-items">
         <h3 class="headline">Внимание к деталям</h3> 
         <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
       </li>
-      <li>
+      <li class="list-items">
          <h3 class="headline">Пунктуальность</h3> 
          <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
        </li>
-       <li>
+       <li class="list-items">
          <h3 class="headline">Планирование</h3> 
          <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
        </li>
-       <li>
+       <li class="list-items">
          <h3 class="headline">Современные технологии</h3> 
          <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
        </li>
@@ -58,28 +58,28 @@
 <section> 
    <h2 class="subtitle">Чем мы занимаемся</h2>
    <ul>
-      <li>
+      <li class="list-items">
          <img src="./images/box_1.jpg" width="370" alt="Написание кода"/>
       </li>
-      <li>
+      <li class="list-items">
          <img src="./images/box_2.jpg" width="370" alt="Визуальное оформление"/>
       </li>
-      <li>
+      <li class="list-items">
          <img src="./images/box_3.jpg" width="370" alt="Дизайн"/>
       </li>
    </ul>
 </section>
-<section>         
+<section class="team-srction">         
    <h2 class="subtitle">Наша команда</h2>
    <ul>
-      <li>
+      <li class="list-items">
          <img src="./images/img_team_1.jpg"
          alt="Игорь Демьяненко-Product Designer"
          width="270"/>
          <h3 class="headline-name">Игорь Демьяненко</h3>
          <p class="text-position">Product Designer</p>
       </li>
-      <li>
+      <li class="list-items">
          <img src="./images/img_team_2.jpg"
          alt="Ольга Репина-Frontend Developer"
          width="270"/>
@@ -87,14 +87,14 @@
          <p class="text-position">Frontend Developer</p>
 
       </li>
-      <li>
+      <li class="list-items">
          <img src="./images/img_team_3.jpg"
          width="270"
          alt="Николай Тарасов-Marketing"/>
          <h3 class="headline-name">Николай Тарасов</h3>
          <p class="text-position">Marketing</p>
       </li>
-      <li>
+      <li class="list-items">
          <img src="./images/img_team_4.jpg"
          width="270"
          alt="Михаил Ермаков-UI Designer"/>
@@ -106,12 +106,13 @@
 </main>
 <!-- Футер -->
    <footer class="footer-section">
-      <a href="WebStudio" class="logo">WebStudio</a>
+      <a href="WebStudio" class="logo"><span>Web</span>Studio</a>
       <address>
          <ul class="address-section">
-            <li><a class="adress">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li><a href="mailto:info@example.com" class="email">info@example.com</a></li>
-            <li><a href="tel:+380991111111" class="tel">+38 099 111 11 11</a></li>
+            <li class="address-section-item"><a class="adress-item">г. Киев, пр-т Леси Украинки, 26</a></li>
+            <li class="address-section-item"><a href="mailto:info@example.com" class="adress-item">info@example.com</a>
+            </li>
+            <li class="address-section-item"><a href="tel:+380991111111" class="adress-item">+38 099 111 11 11</a></li>
          </ul>
       </address>
    </footer>
