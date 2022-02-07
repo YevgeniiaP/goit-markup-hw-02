@@ -3,15 +3,26 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
 }
+:root {
+  --logo-color-main: #2196f3;
+  --logo-color-header: #000000;
+  --logo-color-footer: #ffffff;
+  --footer-color: rgba(255, 255, 255, 0.6);
+  --footer-background-color: #2f303a;
+  --team-color: #f5f4fa;
+  --text-color: #757575;
+  --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --nav-color: #212121;
+}
 /* Header */
 .page-header {
-  background: #ffffff;
+  background: var(--logo-color-footer);
 }
 
 .logo {
   font-family: "Raleway";
   font-weight: bold;
-  color: #000000;
+  color: var(--logo-color-header);
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
@@ -19,20 +30,20 @@ body {
 .logo-footer {
   font-family: "Raleway";
   font-weight: bold;
-  color: #ffffff;
+  color: --logo-color-footer;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
 }
 
 .page-header span {
-  color: #2196f3;
+  color: var(--logo-color-main);
 }
 
 #current {
-  color: #2196f3;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: var(--logo-color-main);
 }
+
 .site-nav-list-item {
   list-style-type: none;
 }
@@ -45,50 +56,50 @@ body {
 }
 .site-nav .site-nav-items:hover,
 .site-nav .site-nav-items:focus {
-  color: #2196f3;
+  color: var(--logo-color-main);
 }
 .site-nav .site-nav-items:active {
-  color: #2196f3;
+  color: var(--logo-color-main);
 }
 .site-nav-items:visited {
-  color: #212121;
+  color: var(--nav-color);
 }
 
 .contacts-items {
   text-decoration: none;
   list-style-type: none;
-  color: #757575;
+  color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
 }
 
 .contacts {
-  color: #757575;
+  color: var(--text-color);
   text-decoration: none;
   list-style-type: none;
 }
 
 .contacts .contacts-items:hover,
 .contacts-items:focus {
-  color: #2196f3;
+  color: var(--logo-color-main);
 }
 
 /* Main */
 
 .portfolio-filter .portfolio-items {
-  background-color: #ffffff;
+  background-color: var(--logo-color-footer);
   text-align: center;
   display: inline-block;
   cursor: pointer;
   font-size: 16px;
-  color: #f5f4fa;
+  color: var(--team-color);
   line-height: 1.6;
 }
 .filter-btn {
   text-decoration: none;
   list-style-type: none;
-  background-color: #f5f4fa;
+  background-color: var(--team-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -101,16 +112,16 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--logo-color-footer);
   border-width: 1px;
-  border-color: #000000;
+  border-color: var(--logo-color-header);
 }
 
 .main-content-section .portfolio-items .filter-btn:hover,
 .filter-btn:focus,
 .filter-btn:active {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--logo-color-main);
+  color: var(--logo-color-footer);
 }
 
 .portfolio-items {
@@ -143,7 +154,7 @@ body {
 }
 /* Main for index.html */
 .title-section {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
   width: 1600px;
   height: 600px;
 }
@@ -154,7 +165,7 @@ body {
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
-  color: #ffffff;
+  color: var(--logo-color-footer);
 }
 .title-section .btn {
   position: absolute;
@@ -167,10 +178,10 @@ body {
   line-height: 1.9;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: var(--logo-color-footer);
   border: none;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: var(--logo-color-main);
+  box-shadow: var(--box-shadow);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -185,11 +196,11 @@ body {
 .text {
   font-size: 14px;
   line-height: 1.7;
-  color: #757575;
+  color: var(--text-color);
 }
 
-.team-srction {
-  background-color: #f5f4fa;
+.team-section {
+  background-color: var(--team-color);
 }
 .subtitle {
   font-weight: bold;
@@ -212,12 +223,12 @@ body {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  color: #757575;
+  color: var(--team-color);
 }
 
 /* Footer */
 .footer-section {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
 }
 .a {
   text-decoration: none;
@@ -232,24 +243,24 @@ body {
 .adress-item {
   font-size: 14px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-color);
 }
 .exact-adress-item {
   font-size: 14px;
   line-height: 1.7;
-  color: #ffffff;
+  color: var(--logo-color-footer);
 }
 .footer-section span {
-  color: #2196f3;
+  color: var(--logo-color-main);
 }
 
 .address-section .address-section-item .adress-item:hover,
 .adress-item:focus,
 .adress-item:active {
-  color: #2196f3;
+  color: var(--logo-color-main);
 }
 .address-section .address-section-item .exact-adress-item:hover,
 .exact-adress-item:focus,
 .exact-adress-item:active {
-  color: #2196f3;
+  color: var(--logo-color-main);
 }
