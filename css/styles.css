@@ -16,7 +16,7 @@ body {
 }
 /* Header */
 .page-header {
-  background: var(--logo-color-footer);
+  background: var();
 }
 
 .logo {
