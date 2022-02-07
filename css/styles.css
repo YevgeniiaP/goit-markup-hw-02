@@ -42,11 +42,11 @@ body {
   color: var(--logo-color-main);
 }
 
-#current {
+.site-nav .site-nav-list-item .current {
   color: var(--logo-color-main);
 }
 
-.site-nav-list-item {
+.site-nav li {
   list-style-type: none;
 }
 
